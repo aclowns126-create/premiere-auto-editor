@@ -1,9 +1,8 @@
 def format_srt_time(total_seconds):
-    ms = round((total_seconds % 1) * 1000)
-    total_ms = int(total_seconds)
-    h = total_ms // 3600
-    m = (total_ms % 3600) // 60
-    s = total_ms % 60
+    total_ms = round(total_seconds * 1000)
+    h, rem_ms = divmod(total_ms, 3_600_000)
+    m, rem_ms = divmod(rem_ms, 60_000)
+    s, ms = divmod(rem_ms, 1000)
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 

@@ -24,7 +24,10 @@
     }
   ],
   "requiredPermissions": {
-    "localFileSystem": "fullAccess"
+    "localFileSystem": "fullAccess",
+    "network": {
+      "domains": ["http://localhost:8787"]
+    }
   },
   "icons": []
 }

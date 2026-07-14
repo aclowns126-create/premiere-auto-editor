@@ -25,6 +25,15 @@ sp-button {
   margin-bottom: 6px;
 }
 
+.instruction {
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
 .log {
   height: 140px;
   overflow-y: auto;

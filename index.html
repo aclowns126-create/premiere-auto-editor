@@ -23,6 +23,15 @@
     </div>
 
     <div class="section">
+      <h3>AI 자동 편집</h3>
+      <p class="hint">보조 서버(server/)가 실행 중이어야 합니다. 원본 영상을 고르고 지시를 적으면, Whisper 전사 + Claude 분석 후 컷 편집된 시퀀스와 자막을 자동으로 생성해 프로젝트로 가져옵니다.</p>
+      <sp-button id="btnPickVideo" variant="secondary">원본 영상 파일 선택</sp-button>
+      <div id="videoStatus" class="hint">선택된 영상 없음</div>
+      <textarea id="instructionInput" class="instruction" placeholder="예: 말 더듬는 부분과 긴 침묵을 잘라내고, 자막은 짧게 끊어서 다듬어줘"></textarea>
+      <sp-button id="btnRunAutoEdit" variant="primary">AI 자동 편집 실행</sp-button>
+    </div>
+
+    <div class="section">
       <h3>디버그</h3>
       <sp-button id="btnExploreApi" variant="secondary">현재 설치된 API 구조 살펴보기</sp-button>
     </div>
@@ -38,6 +47,7 @@
   <script src="js/sequence.js"></script>
   <script src="js/trim.js"></script>
   <script src="js/subtitles.js"></script>
+  <script src="js/ai.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

@@ -29,5 +29,7 @@ wire("btnCreateSequence", createSequenceFromSelectedClips);
 wire("btnCutAtMarkers", cutAtMarkers);
 wire("btnImportSubtitles", importSubtitles);
 wire("btnExploreApi", exploreApi);
+wire("btnPickVideo", pickVideoFile);
+wire("btnRunAutoEdit", runAiAutoEdit);
 
 log("Auto Editor 패널이 로드되었습니다.");

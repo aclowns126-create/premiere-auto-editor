@@ -1,0 +1,30 @@
+{
+  "id": "com.aclowns126.premiereautoeditor",
+  "name": "Premiere Auto Editor",
+  "version": "0.1.0",
+  "main": "index.html",
+  "manifestVersion": 5,
+  "host": [
+    {
+      "app": "PPRO",
+      "minVersion": "24.2.0"
+    }
+  ],
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "mainPanel",
+      "label": {
+        "default": "Auto Editor"
+      },
+      "minimumSize": { "width": 260, "height": 320 },
+      "maximumSize": { "width": 2000, "height": 2000 },
+      "preferredDockedSize": { "width": 320, "height": 480 },
+      "preferredFloatingSize": { "width": 320, "height": 480 }
+    }
+  ],
+  "requiredPermissions": {
+    "localFileSystem": "fullAccess"
+  },
+  "icons": []
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <sp-body>
+    <div class="section">
+      <h3>시퀀스 구성</h3>
+      <sp-button id="btnCreateSequence" variant="primary">선택 클립으로 새 시퀀스 만들기</sp-button>
+    </div>
+
+    <div class="section">
+      <h3>컷 편집</h3>
+      <p class="hint">활성 시퀀스에 이름이 "CUT"으로 시작하는 마커를 찍어두면, 그 구간을 리플 삭제합니다.</p>
+      <sp-button id="btnCutAtMarkers" variant="primary">CUT 마커 구간 잘라내기</sp-button>
+    </div>
+
+    <div class="section">
+      <h3>자막 삽입</h3>
+      <sp-button id="btnImportSubtitles" variant="primary">.srt 자막 파일 가져오기</sp-button>
+    </div>
+
+    <div class="section">
+      <h3>디버그</h3>
+      <sp-button id="btnExploreApi" variant="secondary">현재 설치된 API 구조 살펴보기</sp-button>
+    </div>
+
+    <div class="section">
+      <h3>로그</h3>
+      <div id="log" class="log"></div>
+    </div>
+  </sp-body>
+
+  <script src="js/log.js"></script>
+  <script src="js/premiere.js"></script>
+  <script src="js/sequence.js"></script>
+  <script src="js/trim.js"></script>
+  <script src="js/subtitles.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
